@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template String</title>
+</head>
+<body>
+    <ul>
+        <li>Name : Mg Mg</li>
+        <li>Age  :34</li>
+        <li>Job  :Web Developer</li>
+        <li>City :Mandalay</li>
+    </ul>
+    <script type="text/javascript">
+        const name="Honey Nway Oo";
+        const age=23;
+        const job="Model";
+        const city="Yangon";
+
+        let myliststyle;
+        //console.log(myliststyle);
+        myliststyle="<h1> Hello World </h1>";
+        myliststyle="<h1> Hello Global </h1>";
+        myliststyle=`<h1> Hello Human </h1>`;
+
+        document.write(myliststyle);
+        console.log(myliststyle);
+
+
+
+        //Without Template String
+        myliststyle= "<ul>"+
+                        "<li>Name : "+name+"</li>"+
+                        "<li>Age  : "+age+"</li>"+
+                        "<li>Job  : "+job+"</li>"+
+                        "<li>City : "+city+"</li>"+
+                    "</ul>";
+        document.write(myliststyle);
+
+        //With Template String with Betis(` `)
+        myliststyle=`<ul>
+                        <li>Name : ${name}</li>
+                        <li>Age  : ${age}</li>
+                        <li>Job  : ${job}</li>
+                        <li>City : ${city}</li>
+                     </ul>`;
+        
+         document.write(myliststyle);
+    </script>
+</body>
+</html>

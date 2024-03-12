@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statement</title>
+</head>
+<body>
+    <h1 id="day">Day</h1>
+    <script type="text/javascript">
+        // if Statement
+
+        // Normal Condition
+
+        const passcode="hifi123";
+        console.log(passcode.length);
+        if(passcode.length>=10){
+            console.log("Strong Password");
+        }
+        else if( passcode.length<9 && passcode.length>=5){
+            console.log("Suitable Password");
+
+        }
+        else{
+            console.log("Weak Password");
+        };
+
+
+        // Nested Condition
+
+        const passcode2="hifi123";
+        console.log(passcode2.length);
+
+        if(passcode2.length>=5){
+            if(passcode2.indexOf(" ")==-1){
+                console.log("Valid Password");
+
+            }
+            else{
+                console.log("Password length is enought ! but should not contain Space");
+
+            }
+            
+        }
+        else{
+            console.log("Weak Password and passord must be longer");
+        };
+
+        // Switch Statement
+        
+        const color="violet";
+        switch (color) {
+            case "red":
+                console.log("My fav color is not red");
+                break;
+            case "blue":
+                console.log("My fav color is not blue");
+                break;
+            case "green":
+                console.log("I hate Green color");
+                break;
+            case "violet":
+                console.log("Correct !! My fav color is violet");
+                break;
+            default:
+                console.log("Try Again");
+        }
+
+        //Day 
+       let inputDay=+prompt("Enter number to change Day format");
+        let day=new Date().getDay();
+        console.log(day);
+        switch(inputDay){
+            case 0:
+            inputDay = "Sunday";
+                break;
+            case 1:
+            inputDay = "Monday";
+                break;
+            case 2:
+            inputDay = "Tuesday";
+                break;
+            case 3:
+            inputDay = "Wednesday";
+                break;
+            case 4:
+            inputDay = "Thursday";
+                break;
+            case 5:
+            inputDay = "Friday";
+                break;
+            default :
+            inputDay = "Saturday";
+        
+        }
+        console.log(day);
+       document.getElementById("day").innerText=inputDay;
+
+       let username=prompt("Enter Your Name");
+       let password=prompt("Enter yout password");
+
+       if(username=="aung aung" && password=="12345"){
+        console.log("Welcome Aung Aung");
+       }
+       else{
+        console.log("Try Again");
+       }
+ 
+
+
+
+
+    </script>
+    
+</body>
+</html>

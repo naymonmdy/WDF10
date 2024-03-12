@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Function</title>
+    <style type="text/css">
+        body{
+            height: 100vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 300px;
+            background-color: #f4f4f4;
+            padding: 10px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+
+        }
+        label
+        {
+            display: block;
+            margin:10px 0
+        }
+        .form-control{
+			width: 100%;
+			padding: 5px;
+		}
+		.btn{
+			width: 100%;
+			background-color: darkblue;
+			color: #fff;
+			font-size: 16px;
+			border: none;
+
+			padding: 5px;
+			margin-top: 10px;
+		}
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Show Names =<span id="replacement">Aung Aung</span></h3>
+        <form action="" method="get">
+            <div class="form-group">
+                <label for="">First Name</label>
+                <input type="text" name="firstname" id="firstname" class="form-control" autocomplete="off" autofocus>
+            </div>
+            <div class="form-group">
+                <label for="">Last Name</label>
+                <input type="text" name="lastname" id="lastname" class="form-control" autocomplete="off" autofocus>
+            </div>
+
+        </form>
+       
+        
+        <button type="button" class="btn" onclick="getdata()">Get Name</button>
+    </div>
+    <script type="text/javascript">
+//         //1.Default function or system function
+//         //2.User Function
+//             //1.Regular function
+//                 //i.manual funcion
+//                 //.ii parameter function
+//                          //1.single parameter function
+//                          //2.multiple parameter function
+
+
+//             //2.Arrow function
+//                 //i.manual funcion
+//                     //.ii parameter function
+//                             //1.single parameter function
+//                             //2.multiple parameter function
+        
+//                             //3.Generator function
+
+// //USER FUNCTION;
+//         function greet(){
+//             console.log("Hello Myanmar");
+//             console.log("Hello Thailand");
+//             console.log("Hello Thailand");   
+//         }
+
+//         greet();
+//         greet();
+//         hello();
+
+//         function hello(){
+//             console.log("Hi Yangon");
+//         }
+//         hello();
+//         function hello(){
+//             console.log("Hi Sagaing");
+//         }
+//         function hello(){
+//             console.log("Hi Shwebo");
+//         }
+//         hello();
+
+
+//         function one()
+//         {
+//              console.log("function 1");
+//         }
+//         one();
+
+//         function two(){
+//             one();
+//             console.log("function 2");
+//             one();
+//         }
+
+//         two();
+//         two();
+
+      function getdata(){
+       // console.log("Hello");
+        const getfirstname=document.getElementById("firstname").value;
+        const getlastname=document.getElementById("lastname").value;
+
+        const getreplacename=document.getElementById("replacement").value;
+        // getreplacename.innerText=`${getfirtname} ${getlastname}`;
+        // getreplacename.innerHTML=`${getfirtname} ${getlastname}`;
+        getreplacename.textContext=`${getfirstname} ${getlastname}`;
+
+        document.getElementById('firstname').value="";
+        document.getElementById('lastname').value="";
+        document.getElementById('firstname').focus();
+
+
+      }
+
+    </script>
+</body>
+</html>

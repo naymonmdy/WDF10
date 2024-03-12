@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Literals</title>
+</head>
+<body>
+  
+
+    <script type="text/javascript">
+
+        let students={
+            firstname :"nay mon",
+            middlename:'aung',
+            lastname:'oo',
+            age:23
+        };
+
+        console.info(students);
+        console.table(students);
+        console.log(typeof (students));
+
+        console.log(students.lastname);
+        console.log(students.age);
+
+
+        let persons={
+            firstname:"Kyaw Kyaw",
+            lastname:"Aung",
+            age:23,
+            single:false,
+            email:"naymon2021@gmail.com",
+
+            address :{
+                street:"64st",
+                township:"Chanayethazan"
+
+            },
+
+            hometown :{
+                city:"Mandalay",
+                region:"MDY",
+
+            },
+            hobbies:[
+                "eat","sleep","code","sport","swim"
+            ]
+        };
+
+        console.table(persons);
+        console.log(persons.address.street);
+        console.log(typeof persons.hometown);
+
+        console.info(persons.hometown.city);
+        console.info(persons.hometown);
+
+        console.table(persons);
+        console.log(persons.hobbies[3]);
+        console.log(typeof(persons.hobbies));
+        console.log(persons.hobbies[persons.hobbies.length-1]);
+        console.log(persons.hobbies[6]);
+
+
+
+
+
+
+
+
+            
+    </script>
+    
+</body>
+</html>

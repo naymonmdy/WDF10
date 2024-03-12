@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+<h1> Array Lessons</h1>
+<script type="text/javascript">
+
+    let arrgirls = new Array("su su","hla hla","mya myo","hla thu");
+    console.log(arrgirls);
+    console.log(typeof arrgirls);
+    console.table(arrgirls);
+
+
+    const arrboys=['mg mg','aung aung','htoo htoo','phyo mg','wai gyi'];
+    console.log(arrboys);
+    console.log(arrboys.length);
+    console.log(arrboys[2]);
+
+    console.log(arrboys[arrboys.length-1]);
+    console.log(arrboys[arrboys.length-3]);
+
+    let myarr=[ "kyaw kyaw",200,false,undefined,null, new Date(),["red","orange"],{firstname:"mg mg",city:"Mandalay"}];
+
+    console.table(myarr);
+    console.log(myarr[0]);
+    console.log(typeof myarr[1]);
+    console.log(5);
+    console.log(myarr[6][1]);
+    console.log(myarr[7].firstname);
+    console.log(myarr[7].city);
+
+    let colors = ["red","green","blue"];
+        colors =["rgba","hsla","myck"];
+        colors =["colors"];
+        console.log(colors);
+
+
+    let city = [];
+
+    city[0]="Mdy";
+    city[1]="Ygn";
+    city[2]="NPT";
+    city[4]="MGY";
+    city[5]="SGG";
+    city[2]="MYW";
+
+    console.table(city);
+    console.log(city);
+    console.log(city.length);
+    console.log(city[3]);
+
+
+    let animals= ["dog","cat"];
+
+    animals[2]="deer";
+    animals[3]='tiger';
+    animals[4]="rabbit";
+    animals[0]="lion";
+
+    console.log(animals);
+    console.log(animals.length);
+
+
+    console.log(animals[5]);
+
+    const nestarrs =[
+        ["red","green","blue"],
+        ["cmyk","rgba","hsla"],
+        ["canno","epson",["laser","ink"]]
+    ];
+
+    console.log(nestarrs);
+    console.log(nestarrs.length);
+    console.log(nestarrs[0]);
+    console.log(nestarrs[1][1]);//rgba
+    console.log(nestarrs[2][2][1]);//ink
+
+
+</script>
+    
+</body>
+</html>

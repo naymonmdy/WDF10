@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Method</title>
+</head>
+<body>
+    <h1>
+        Array Method
+    </h1>
+    <script type="text/javascript">
+
+    //IndezOf()
+     arrayColors=['red','green','white','black','gray'];
+     console.log(arrayColors.indexOf('green'));
+     console.log(arrayColors.length);
+     console.log(arrayColors.indexOf("red"));
+     console.log(arrayColors.indexOf("Red"));
+
+     //Array.isArray()
+     let name="Nay Mon";
+     console.log(Array.isArray(arrayColors));
+     console.log(Array.isArray(name));
+
+     //join("delimeter")
+    console.log(String(arrayColors));
+    console.log(arrayColors.toString());
+    console.log(arrayColors.join("-"));
+    console.log(arrayColors.join("/"));
+
+    //push() to add last index
+    const candys=["red","white","black","gray","dark"];
+    console.log(candys);
+    candys[2]="pink";
+    candys.push("green");
+    console.log(candys);
+    console.log(candys.length);
+    candys.push("orange","blue");
+    console.log(candys);
+
+    //unshift() to add in front
+    candys.unshift("seablue");
+    console.log(candys);
+    candys.unshift("silver","purple","light","gold");
+    console.log(candys);
+
+    //shift() to remove front index
+    candys.shift();
+    candys.shift();
+    console.log(candys);
+    console.log(candys.length);
+
+    //pop() to remove last index
+    candys.pop();
+    candys.pop();
+    console.log(candys);
+    console.log(candys.length);
+
+    //delete remove value not index
+    delete candys[1];
+    console.log(candys);
+
+    delete candys[2];
+    console.log(candys);
+
+    //splice(0,3)
+    candys.splice(0,4);
+    console.log(candys);
+    console.log(candys.length);
+
+    //concate array joining
+    let male =[ "aung aung","maung maung","min"];
+    let female=["yin yin","phyo","mon mon ","htoo htoo"];
+    let num=[1,2,4,5];
+    console.log(male,female);
+    console.log(male+female);
+    console.log(male.concat(female));
+    console.log(num.concat(female));
+
+    //sort () A To Z
+    const people =male.concat(female);
+    console.log(people);
+    console.log(people.sort());
+    console.log(people.reverse());
+
+    //number sort not function in number
+
+    arrnum1=[23,323,34,4,53,2,51,633,5,4,2,1,3,5,666,32];
+    console.log(arrnum1.sort());
+    console.log(arrnum1.reverse());
+
+    //call back fuction==> nameless function
+    console.log(arrnum1.sort(function(a,z)
+    {
+
+       return a-z; //0,1,2....
+        // return z-a; //100,99,98,......
+    }));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

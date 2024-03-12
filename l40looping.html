@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping</title>
+</head>
+<body>
+   
+    <script type="text/javascript">
+      
+    const arr=["red","green","blue","white"];
+    for(var i=0;i<arr.length;i++)
+    {
+        console.log(arr[i]);
+    }
+        console.log("I outside value is = ",i);
+
+    let j=10;
+    for(j;j<=20;j++)
+    {
+        console.log("Value is = ",j);
+    }
+        console.log("J outside value is =",j);
+
+    //const var can't loop and error 
+    //var can get outside scope printing
+    //let can't get outside scope printing
+
+    for (var k=0;k<=10;k++){
+        if(k===5){
+            console.log("5 is my fav number");
+        }
+        console.log("K value ie = ",k);
+    }
+    console.log("k outside value is = ",k);
+
+
+
+    for(var m=0;m<=10;m++)
+    {
+        if(m===2){
+            console.log(m+" is my fav number");
+            break;
+        }
+        console.log("m value is = ",m);
+    }
+    console.log("m outside value is = ",m)
+
+
+    for(var p=0;p<10;p++)
+    {   
+       // console.log(p);
+        if(p===2)
+        {
+            console.log(p+" is my fav number");
+            continue;
+        }
+       console.log(p);
+    }
+    console.log("p outside value is = ",p);
+
+
+    const colorArr=["red","green","steelblue","pink","blue"];
+    for(var w=0;w<colorArr.length;w++)
+    {
+        console.log(colorArr[w]);
+    }
+
+
+    const students={
+        name:"Mg Min",
+        address:"MDY",
+        parent:"U Mya",
+        phone:"092342"
+    }
+
+    for ( key in students) {
+      //  console.log(key);
+        console.log(students[key]);
+    }
+
+    let stu = ["aye","aung","min","htoo","myo"];
+    
+    for (idx in stu) {
+
+        console.log(stu[idx]);
+       
+        }
+
+    let greeting="Hello Guys";
+    for (let idx in greeting)
+    {
+        console.log(greeting[idx]);
+    }
+    
+    // for of loop for array and direct value
+    let  girls= ["Su Su","Lu Lu","Mu Mu","Aye Aye"]
+    for (var girl of girls) {
+        console.log(girl);
+    }
+
+    const addresss ="Net Ye Kan Village , Mandalay";
+    for(address of addresss)
+    {
+        console.log(address);
+    }
+
+
+
+    let people=[
+        {name:"Aung Aung",age:24},
+        {name:"Aye Aye",age:34},
+        {name:"Min Min",age:53},
+    ]
+
+    for (var a=0;a<people.length;a++)
+    {
+        console.log("Name= "+people[a].name+ " and age is =" +people[a].age);
+    }
+
+    //4.While loop
+    //Start
+    // while(condition){
+         //before printout
+         //code to executed
+         //after printout
+
+    // }
+    let int=0;
+    while(i<10){
+
+        console.log("The Value of i is = "+i);
+        i++;
+    }
+   console.log("The Outside value is = "+i);
+
+   let b=0;
+
+   while(b<10)
+   {
+    b++;
+    console.log("The value of b is= "+b)
+   }
+   // 6.ForEach
+   //mainarr.forEach(function(value,index,arr))
+//    {
+
+//    }
+
+const candycolors=["red","blue","orrange","white","black"];
+
+candycolors.forEach(function(candycolor,idx,arr){
+   // console.log(candycolor);
+    // console.log(idx);
+    // console.log(arr);
+
+    console.log("index number is ="+idx+" value is= "+candycolor)
+
+})
+
+//7. map Loop
+
+// mainarrays.map(function(value,index,array)
+// {
+//      code to be executed;
+// })
+
+const names=["sai sai","nay nay","ko ko","mg mg","myo myo","naung naung"];
+
+names.forEach(function(name)
+{
+    console.log("For each result is "+name);
+});
+
+names.map(function(name)
+{
+    console.log("map result is "+name);
+});
+
+const doctors =names.map(function(name)
+{
+    // console.log(name);
+    // console.log('Dr. ${name}`);
+    return `Dr.${name}`;
+
+});
+
+console.log(doctors);//dr...,dr...
+
+
+const dorc = names.forEach(function(name)
+{
+     // console.log(name);
+    // console.log('Dr. ${name}`);
+    return `Dr.${name}`;
+});
+
+
+console.log(dorc);
+
+//8.Filter loop
+// mainarrays.filter(function(value)
+// {
+//      code to be executed;
+// })
+
+const ages=[1,2,4,6,23,432,32,23,13,35,66,43,13,21,55,22];
+
+const getover20 =ages.filter(function(age){
+
+    return age >20;
+})
+
+console.log(getover20);
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
